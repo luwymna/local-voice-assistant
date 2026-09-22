@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Piper voice models (large files, downloadable)
+*.onnx
+*.onnx.json
+
+# Test / temp audio outputs
+t.wav
+test.wav
+*.tmp.wav
+
+# Environment / secrets
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
