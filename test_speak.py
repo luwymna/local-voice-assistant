@@ -11,7 +11,6 @@ stream = sd.OutputStream(
 )
 stream.start()
 
-# Just remove the speaker_id argument entirely
 for chunk in voice.synthesize("Hello, this is a test of the new speak function."):
     stream.write(np.frombuffer(chunk.audio_int16_bytes, dtype=np.int16))
 
