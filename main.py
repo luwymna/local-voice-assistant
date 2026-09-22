@@ -9,7 +9,6 @@ import sys
 
 from piper.voice import PiperVoice
 
-# ---------- Load models once ----------
 whisper_model = whisper.load_model("base")
 voice = PiperVoice.load("en_US-lessac-medium.onnx")
 
@@ -73,7 +72,7 @@ def speak(text):
         print(f"[Would have said] {text}")
 
 
-# ---------- Main loop ----------
+#main loop
 messages = [
     {
         "role": "system",
